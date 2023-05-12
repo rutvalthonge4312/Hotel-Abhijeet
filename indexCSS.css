@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-color: #fdf2e9;
+  overflow-x: hidden;
+}
+/*Generall Info css*/
+.generalInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10rem 5rem;
+  margin-bottom: 10rem;
+  padding: 1rem 1rem;
+}
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: auto;
+  width: auto;
+  max-width: 80rem;
+  max-height: 90rem;
+  min-height: 35rem;
+  min-width: 35rem;
+}
+.infoSection h1 {
+  font-size: 5rem;
+  color: #333;
+
+  margin: 1rem 1rem;
+  margin-top: 0;
+}
+.infoSection p {
+  font-size: 2rem;
+
+  margin: 3rem 1rem;
+}
+.infoSection button {
+  background-color: #cf711f;
+  color: #fdf2e9;
+  font-size: 2.1rem;
+  border-radius: 11px;
+  height: auto;
+  width: auto;
+  min-height: 7rem;
+  min-width: 28rem;
+  margin: 1rem 2rem;
+  border: 1px solid #fdf2e9;
+  box-shadow: 5px 5px 9px 1px rgb(215, 208, 208);
+}
+.infoSection #button2 {
+  background-color: #e3d7ce;
+  color: #333;
+}
+.infoSection #button2:hover {
+  background-color: #dacfc7;
+  transform: translateX(5px);
+  transition: all ease-in-out 0.3s;
+}
+.infoSection button:hover {
+  background-color: #b06625;
+  transform: translateX(-5px);
+  transition: all ease-in-out 0.3s;
+}
+.imageSection {
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  margin: 2rem 2rem;
+  border-radius: 15px;
+}
+.imageSection img {
+  border-radius: 15px;
+  max-height: 500px;
+}
+.imageSection img:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.9s;
+}
+/*Meals*/
+.meals .nonVeg .scrolling {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.nonVegMeals {
+  display: inline-block; /* display cards in a row */
+  width: 200px; /* set the width of the cards */
+  height: 300px; /* set the height of the cards */
+  margin-right: 20px; /* add some space between the cards */
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 24px;
+  line-height: 300px;
+}
+/*COntact Us CSS*/
+.contactUs {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem;
+}
+.contactUs .actualInfo {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+.contactUs .actualInfo .card1 {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem 2rem;
+  padding: 2rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.contactUs .actualInfo .card1 ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.contactUs .actualInfo .card1 h2 {
+  font-family: "Mangal", Arial, sans-serif;
+  color: #cf711f;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.contactUs .actualInfo .card1 p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.contactUs .actualInfo .card2 {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem 2rem;
+  padding: 2rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.contactUs .actualInfo .card2 h2 {
+  color: #cf711f;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.contactUs .actualInfo .card2 h3 {
+  line-height: 1.5;
+}
+.contactUs .actualInfo .card2 p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.contactUs .actualInfo img {
+  height: auto;
+  width: auto;
+  max-width: 30px;
+  max-height: 30px;
+  margin: 10px;
+}
+.contactUs .actualInfo img:hover {
+  transform: rotate(10deg);
+}
+.contactUs .iamgeOfOwner {
+  border: 1px solid black;
+  margin-left: 2rem;
+  height: auto;
+  width: auto;
+  max-width: 400px;
+  max-height: 400px;
+  overflow: hidden;
+}
+.contactUs .iamgeOfOwner img {
+  height: auto;
+  width: auto;
+  max-width: 400px;
+  max-height: 400px;
+}

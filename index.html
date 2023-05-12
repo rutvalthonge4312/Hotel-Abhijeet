@@ -17,6 +17,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="indexCSS.css" />
   </head>
   <body>
     <div class="navbar">
@@ -79,14 +80,75 @@
         </div>
       </nav>
     </div>
-    <div class="hotelNameAndBriefInfo"></div>
+    <div class="generalInfo">
+      <div class="infoSection">
+        <h1>Hotel Abhijeet</h1>
+        <p>
+          The smart 365-days-per-year food subscription that will make you eat
+          healthy again. Tailored to your personal tastes and nutritional needs.
+        </p>
+        <div class="buttonsInInfoSection">
+          <button id="button1" onclick="scrollToElement()">Hotel Menu</button>
+          <button id="button2" onclick="scrollToElementToLearnMore()">
+            Hotel Gallary
+          </button>
+        </div>
+      </div>
+      <div class="imageSection">
+        <img src="/ImageFolder/tempImage.webp" alt="cafe Food Image" />
+      </div>
+    </div>
     <div class="HotelImage"></div>
-    <div class="meals"></div>
+    <div class="meals">
+      <div class="nonVeg">
+        <h2>नॉन-व्हेज थाळी's</h2>
+        <div class="scrolling">
+          <div class="nonVegMeals">jjjjjjj</div>
+          <div class="nonVegMeals">jjjjjjj</div>
+          <div class="nonVegMeals">jjjjjjj</div>
+          <div class="nonVegMeals">jjjjjjj</div>
+          <div class="nonVegMeals">jjjjjjj</div>
+        </div>
+      </div>
+      <div class="veg"></div>
+    </div>
     <div class="rewiews"></div>
     <div class="gallary"></div>
     <div class="contactUs">
-      <div class="actualInfo"></div>
-      <div class="iamgeOfOwner"></div>
+      <div class="actualInfo">
+        <div class="card1">
+          <h2 lang="mr">पै.आबासाहेब मोरे</h2>
+          <h3>Owner Of - Hotel Abhijeet</h3>
+          <p>+91 97679 77749</p>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/tanvir.more"
+                ><img
+                  src="/ImageFolder/faecbookPng.png"
+                  alt="Owner's Facebook Link"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/abhi.more.9191/"
+                ><img
+                  src="/ImageFolder/instargramPng.png"
+                  alt="Owner's Instagram Link"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="card2">
+          <h2>Hotel Abhijeet</h2>
+          <h3>
+            Hotel Abhijeet,Near Hindvi Bear shop,Solapur-Pune Highway,Modnoimb
+          </h3>
+          <p>+91 97679 77749</p>
+          <p>Visit Once!</p>
+        </div>
+      </div>
+      <div class="iamgeOfOwner">
+        <img src="/ImageFolder/AbhijeetImage.jpg" alt="Owner's Image" />
+      </div>
     </div>
     <div class="footer"></div>
     <script
@@ -99,5 +161,19 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var container = document.querySelector(".scrolling");
+      var cards = document.querySelectorAll(".nonVegMeals");
+
+      // add event listeners to the container element
+      container.addEventListener("scroll", function (event) {
+        // calculate the distance to move based on the scroll direction
+        var scrollLeft = container.scrollLeft;
+        var delta = event.deltaY || event.detail || event.wheelDelta;
+        var distance = delta > 0 ? 100 : -100;
+        container.scrollLeft += distance;
+        event.preventDefault();
+      });
+    </script>
   </body>
 </html>
