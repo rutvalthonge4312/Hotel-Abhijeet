@@ -21,7 +21,22 @@ body {
   overflow-x: hidden;
 }
 /*Navabar*/
-.navbbar {
+.header {
+  height: auto;
+  width: auto;
+  border: 2px solid red;
+}
+.header img {
+  height: auto;
+  width: auto;
+  max-width: 150px;
+  max-height: 150px;
+  border: 2px solid red;
+}
+.header nav {
+  border: 2px solid black;
+  height: 9rem;
+  font-size: 2rem;
 }
 /*Generall Info css*/
 .generalInfo {
@@ -102,6 +117,25 @@ body {
   transition: all ease-in-out 0.9s;
 }
 /*Meals*/
+.meals {
+  background-color: white;
+}
+.carousel-inner img {
+  display: block;
+  margin: auto;
+  width: 350px;
+  height: 350px;
+  border: 2px solid red;
+}
+.carousel-inner .card {
+  display: block;
+  margin: auto;
+  height: auto;
+  width: auto;
+  min-height: 350px;
+  min-width: 350px;
+  border: 2px solid black;
+}
 
 /*COntact Us CSS*/
 .contactUs {
